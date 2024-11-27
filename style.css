@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --bg-color: #080808;
+    --secund-bg-color: #101010;
+    --text-color: #fff;
+    --main-color: #ea580c;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;
+    padding: 0 8rem;
+    height: 100dvh;
+}
+
+button{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--text-color);
+    border-radius: 10px;
+}
+
+
+/* start: header */
+header{
+    width: 100%;
+    padding: 1.6rem 0;
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-title{
+    background: linear-gradient(
+        270deg,
+        #df8908 10%,
+        #ff1d15 100%
+    );
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.logo-title:hover{
+    transform: scale(1.05);
+    text-shadow:0 0 25px  var(--main-color);        
+}
+
+.sub-title{
+    font-size: 1.5rem;
+    text-shadow: 4px 4px 16px rgba(255, 255, 255, 0.4);
+}
+
+/* start - button Nav */
+/* From Uiverse.io by SujitAdroja */ 
+.btn-nav {
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 3px solid var(--main-color);
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  
+  .btn-nav:hover {
+    color: var(--text-color);
+  }
+  
+  .btn-nav::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn-nav:hover::before {
+    width: 160%;
+  }
+  
+/* end - button Nav */
+
+/* end: header */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.list-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.list-items li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-items label{
+    color: #f4f4f4;
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 4px 4px 16px rgba(255, 255, 255, 0.3);
+    margin-bottom: 2px;
+}
+
+.list-items input{
+    width: 25vw;
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: 3px solid var(--main-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 6px 10px 12px rgba(234, 90, 12, 0.486);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.list-items select{
+    width: 8vw;
+    display: flex;
+    padding: .5rem;
+    font-size: 1rem;
+    color: #f4f4f4;
+    font-weight: 700;
+    border: none;
+    background-color: #ea580c;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.list-items option{
+    background-color: #ea580c;
+    color: #f4f4f4;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+#add-item{
+    width: 100%;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: linear-gradient(
+        270deg,
+        #df8908 10%,
+        #ff1d15 100%
+    );
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f4f4f4;
+    transition: box-shadow .5s ease-in-out;
+}
+
+#add-item:hover{
+    box-shadow: 0 0 10px var(--main-color);
+}
+
+/* start: part-right */
+.part-right{
+    width: 100%;
+    margin-left: 2rem;
+    margin-top: 2rem; ;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+}
+
+.table-scroll{
+    max-height: 16vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+    padding-right: 6px;
+}
+
+#table-content{
+    width: 100%;
+    text-align: center;
+    margin-right: 10px;
+    margin-right: auto;
+}
+
+#table-content th{
+    max-width: 100%;
+    background-color: var(--main-color);
+    padding: 10px 1rem;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#table-content tbody td{
+    width: 100%;
+    padding: .5rem;
+    text-align: center;
+    font-size: .8rem;
+    background-color: var(--secund-bg-color);
+    font-weight: 500;
+}
+
+#table-content tbody button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+#table-content tbody button:hover{
+    color: #ff1d15;
+}
+
+#summary{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+#total-amount{
+    color: var(--main-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.gerator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+.gerator label{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.gerator input{
+    width: 4rem;
+    padding: .6rem;
+    border-radius: 4px;
+    background-color: var(--secund-bg-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.gerator button{
+    padding: .6rem ;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn-pdf span{
+    background: linear-gradient(to right, #df8908, #ff1d15);
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+#btn-pdf{
+    background-color: #212121;
+    font-size: 1.2rem;
+    padding: .6rem 1.5rem;
+    transition: background-color .5s ease-in-out;
+}
+#btn-pdf:hover{
+    background-color: var(--text-color);
+}
+/* end: part2 */

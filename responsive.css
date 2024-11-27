@@ -1,0 +1,134 @@
+@media screen and (max-width: 1280px) {
+
+    body {
+        width: 100%;
+        ;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+        padding: 8rem 0;
+    }
+
+    header {
+        position: fixed;
+        width: 90%;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        padding: .5rem 1.5rem;
+        border-radius: 3rem;
+        z-index: 1000;
+    }
+
+    .logo-title {
+        font-size: 1.8rem;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+    }
+
+    .btn-nav {
+        padding: 6px 14px;
+        font-size: 12px;
+        border-radius: 2rem;
+    }
+
+    .list-items input {
+        width: 38vw;
+        padding: 1rem;
+        margin-top: 4px;
+        box-shadow: 3px 6px 9px rgba(234, 90, 12, 0.486);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .list-items select {
+        width: 14vw;
+        font-size: 1rem;
+    }
+
+    .list-items option {
+        font-size: .8rem;
+    }
+
+
+    #add-item {
+        padding: .5rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .part-right {
+        width: 110%;
+        margin-left: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
+    }
+
+    .table-scroll {
+        max-height: 16vw;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    #table-content th {
+        padding: 5px 1rem;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    #table-content tbody td {
+        padding: 4px;
+        font-weight: 400;
+    }
+
+    #summary {
+        justify-content: center;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+        text-wrap: nowrap;
+    }
+
+    #total-amount {
+        font-size: 1.2rem;
+    }
+
+    .gerator {
+        justify-content: center;
+    }
+
+    .gerator label {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+    .gerator input {
+        width: 3rem;
+        padding: .5rem 0;
+        text-align: center;
+    }
+
+    .gerator button {
+        padding: .6rem;
+        border-radius: 4px;
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    #btn-pdf {
+        font-size: .8rem;
+        padding: .6rem;
+    }
+}

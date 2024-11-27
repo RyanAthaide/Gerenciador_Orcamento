@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Gerador de Orçamento Personalizado</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo-title">GOP</h1>
+        <h2 class="sub-title">Crie seu Orçamento Agora!</h2>
+
+        <button class="btn-nav">Entre em Contato</button>
+
+    </header>
+
+    <section class="container">
+        <form id="form-content">
+            <ul class="list-items">
+                <li class="list-item">
+                    <label for="item-name">Nome do item:</label>
+                    <input type="text" id="item-name" required placeholder="Insira um Item:">
+                </li>
+                <li class="list-item">
+                    <label for="item-quantity">Quantidade:</label>
+                    <input type="number" id="item-quantity" required placeholder="Insira a Quantidade:">
+                </li>
+                <li class="list-item">
+                    <label for="item-price">Preço Unitário (R$):</label>
+                    <input type="number" id="item-price" required placeholder="Insira um Preço:">
+                </li>
+                <li class="list-item">
+                    <label for="category">Categoria:</label>
+                    <select name="category" id="item-category">
+                        <option value="Produto">Produto</option>
+                        <option value="Serviço">Serviço</option>
+                    </select>
+
+                    <button type="button" id="add-item" onclick="addItem()">Adicionar Item</button>
+                </li>
+
+                
+            </ul>
+            
+        </form>
+
+        <section class="part-right">
+            <div class="table-scroll">
+                <table id="table-content">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Quantidade</th>
+                            <th>Preço Unitário</th>
+                            <th>Valor Total</th>
+                            <th>Categoria</th>
+                            <th style="background-color: transparent; font-size: 1.5rem; display: flex;"><i class="fa-solid fa-trash-can"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <section id="summary">
+                <p id="total-amount">Total: R$ 0</p>
+
+                <section class="gerator">
+                    <label for="discount">Desconto/Taxa (%):</label>
+                    <input type="text" id="discount" value="0">
+                    <button type="button" onclick="applyDiscount()">Aplicar Desconto</button>
+                    <button id="btn-pdf" class="btn-pdf" type="button" onclick="generatePDF()"><span>Gerar PDF</span></button>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="pdf.js"></script>
+</body>
+
+</html>
