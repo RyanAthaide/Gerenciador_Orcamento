@@ -18,7 +18,7 @@ function generatePDF() {
         pdf.text(item.quantity.toString(), 60, yPosition);        // Quantidade
         pdf.text(`R$ ${item.price.toFixed(2)}`, 110, yPosition);  // Preço unitário
         pdf.text(`R$ ${item.total.toFixed(2)}`, 160, yPosition);  // Total do item
-        
+
         total += item.total;  // Acumula o total geral
         yPosition += 10;      // Incrementa a posição y para a próxima linha
     });

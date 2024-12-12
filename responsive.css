@@ -41,7 +41,7 @@
     }
 
     .list-items input {
-        width: 38vw;
+        width: 40vw;
         padding: 1rem;
         margin-top: 4px;
         box-shadow: 3px 6px 9px rgba(234, 90, 12, 0.486);
@@ -132,3 +132,40 @@
         padding: .6rem;
     }
 }
+
+@media (min-width: 320px) and (max-width: 760px) {
+    /* Estilos para celulares médios */
+    header{
+        justify-content: space-between;
+    }
+    .sub-title{
+        display: none;
+    }
+
+    .list-items input {
+        width: 90dvw;
+        padding: 1rem 5px;
+        box-shadow:none;
+    }
+    .list-items select {
+        width: 50%;
+    }
+
+    .part-right {
+        width: 100dvw;
+        flex-wrap: wrap;
+        text-wrap: wrap;
+    }
+    .table-scroll {
+        max-height: 32vw;
+    }
+
+    #table-content th {
+        padding: 5px 1rem;
+        font-size: .6rem;
+        font-weight: 500;
+    }
+
+    
+
+  }

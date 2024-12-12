@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-:root{
+:root {
     --bg-color: #080808;
     --secund-bg-color: #101010;
     --text-color: #fff;
     --main-color: #ea580c;
 }
 
-body{
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
     width: 100%;
@@ -22,26 +22,26 @@ body{
     height: 100dvh;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 8px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: transparent;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: var(--text-color);
     border-radius: 10px;
 }
 
 
 /* start: header */
-header{
+header {
     width: 100%;
     padding: 1.6rem 0;
     display: flex;
@@ -50,12 +50,10 @@ header{
     justify-content: space-between;
 }
 
-.logo-title{
-    background: linear-gradient(
-        270deg,
-        #df8908 10%,
-        #ff1d15 100%
-    );
+.logo-title {
+    background: linear-gradient(270deg,
+            #df8908 10%,
+            #ff1d15 100%);
     background-clip: text;
     color: transparent;
     font-weight: 900;
@@ -63,18 +61,19 @@ header{
     cursor: pointer;
     transition: .3s ease-in-out;
 }
-.logo-title:hover{
+
+.logo-title:hover {
     transform: scale(1.05);
-    text-shadow:0 0 25px  var(--main-color);        
+    text-shadow: 0 0 25px var(--main-color);
 }
 
-.sub-title{
+.sub-title {
     font-size: 1.5rem;
     text-shadow: 4px 4px 16px rgba(255, 255, 255, 0.4);
 }
 
 /* start - button Nav */
-/* From Uiverse.io by SujitAdroja */ 
+/* From Uiverse.io by SujitAdroja */
 .btn-nav {
     color: var(--text-color);
     text-transform: uppercase;
@@ -88,13 +87,13 @@ header{
     position: relative;
     transition: all 1s;
     overflow: hidden;
-  }
-  
-  .btn-nav:hover {
+}
+
+.btn-nav:hover {
     color: var(--text-color);
-  }
-  
-  .btn-nav::before {
+}
+
+.btn-nav::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -105,42 +104,42 @@ header{
     background-color: var(--main-color);
     z-index: -1;
     transition: all 1s;
-  }
-  
-  .btn-nav:hover::before {
+}
+
+.btn-nav:hover::before {
     width: 160%;
-  }
-  
+}
+
 /* end - button Nav */
 
 /* end: header */
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-form{
+form {
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
 }
 
-.list-items{
+.list-items {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.list-items li{
+.list-items li {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
 
-.list-items label{
+.list-items label {
     color: #f4f4f4;
     font-size: 14px;
     font-weight: 500;
@@ -148,7 +147,7 @@ form{
     margin-bottom: 2px;
 }
 
-.list-items input{
+.list-items input {
     width: 25vw;
     padding: .8rem;
     display: flex;
@@ -166,7 +165,7 @@ form{
     font-weight: 500;
 }
 
-.list-items select{
+.list-items select {
     width: 8vw;
     display: flex;
     padding: .5rem;
@@ -179,7 +178,7 @@ form{
     border-radius: 4px;
 }
 
-.list-items option{
+.list-items option {
     background-color: #ea580c;
     color: #f4f4f4;
     font-size: 1rem;
@@ -187,18 +186,16 @@ form{
 }
 
 
-#add-item{
+#add-item {
     width: 100%;
     padding: .8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    background: linear-gradient(
-        270deg,
-        #df8908 10%,
-        #ff1d15 100%
-    );
+    background: linear-gradient(270deg,
+            #df8908 10%,
+            #ff1d15 100%);
     border: none;
     font-size: 1.2rem;
     font-weight: 600;
@@ -206,15 +203,15 @@ form{
     transition: box-shadow .5s ease-in-out;
 }
 
-#add-item:hover{
+#add-item:hover {
     box-shadow: 0 0 10px var(--main-color);
 }
 
 /* start: part-right */
-.part-right{
+.part-right {
     width: 100%;
     margin-left: 2rem;
-    margin-top: 2rem; ;
+    margin-top: 2rem;
     padding: 0 4rem;
     display: flex;
     flex-direction: column;
@@ -222,22 +219,22 @@ form{
     text-wrap: nowrap;
 }
 
-.table-scroll{
-    max-height: 16vw;
+.table-scroll {
+    max-height: 15vw;
     overflow-y: auto;
     overflow-x: hidden;
     margin-bottom: 1rem;
     padding-right: 6px;
 }
 
-#table-content{
+#table-content {
     width: 100%;
     text-align: center;
     margin-right: 10px;
     margin-right: auto;
 }
 
-#table-content th{
+#table-content th {
     max-width: 100%;
     background-color: var(--main-color);
     padding: 10px 1rem;
@@ -247,7 +244,7 @@ form{
     text-align: center;
 }
 
-#table-content tbody td{
+#table-content tbody td {
     width: 100%;
     padding: .5rem;
     text-align: center;
@@ -256,7 +253,15 @@ form{
     font-weight: 500;
 }
 
-#table-content tbody button{
+.column-name{
+    max-width: 10vw;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+#table-content tbody button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,11 +274,11 @@ form{
     transition: color .3s ease-in-out;
 }
 
-#table-content tbody button:hover{
+#table-content tbody button:hover {
     color: #ff1d15;
 }
 
-#summary{
+#summary {
     width: 100%;
     display: flex;
     align-items: center;
@@ -282,25 +287,27 @@ form{
     flex-wrap: wrap;
 }
 
-#total-amount{
+#total-amount {
     color: var(--main-color);
     font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 1.2rem;
 }
 
-.gerator{
+.gerator {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 1rem;
 }
-.gerator label{
+
+.gerator label {
     font-size: 1.2rem;
     font-weight: 800;
 }
-.gerator input{
+
+.gerator input {
     width: 4rem;
     padding: .6rem;
     border-radius: 4px;
@@ -310,8 +317,9 @@ form{
     font-size: 1rem;
     font-weight: 500;
 }
-.gerator button{
-    padding: .6rem ;
+
+.gerator button {
+    padding: .6rem;
     border-radius: 4px;
     background-color: var(--main-color);
     border: none;
@@ -320,19 +328,22 @@ form{
     font-weight: 500;
 }
 
-.btn-pdf span{
+.btn-pdf span {
     background: linear-gradient(to right, #df8908, #ff1d15);
     background-clip: text;
     color: transparent;
     font-weight: 900;
 }
-#btn-pdf{
+
+#btn-pdf {
     background-color: #212121;
     font-size: 1.2rem;
     padding: .6rem 1.5rem;
     transition: background-color .5s ease-in-out;
 }
-#btn-pdf:hover{
+
+#btn-pdf:hover {
     background-color: var(--text-color);
 }
+
 /* end: part2 */
