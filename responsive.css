@@ -177,14 +177,25 @@
     }
 
     #table-content th {
-        padding: 5px 12px;
+        padding: 5px 10px;
         font-size: .6rem;
         font-weight: 500;
+    }
+
+    #table-content th i{
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #table-content tbody td {
         padding: 4px;
         font-weight: 400;
+    }
+
+    #table-content td button {
+        font-size: 1rem;
     }
 
     #total-amount {
