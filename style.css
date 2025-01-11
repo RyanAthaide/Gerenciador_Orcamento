@@ -120,7 +120,7 @@ header {
     width: 100%;
 }
 
-form {
+#form-content {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -308,7 +308,7 @@ form {
 }
 
 .gerator input {
-    width: 4rem;
+    width: 1rem;
     padding: .6rem;
     border-radius: 4px;
     background-color: var(--secund-bg-color);

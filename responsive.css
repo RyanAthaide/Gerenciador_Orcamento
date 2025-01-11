@@ -66,7 +66,7 @@
     }
 
     .part-right {
-        width: 110%;
+        width: 100%;
         margin-left: 0;
         padding: 0;
         display: flex;
@@ -84,13 +84,13 @@
     }
 
     #table-content th {
-        padding: 5px 1rem;
         font-size: .8rem;
         font-weight: 600;
     }
 
     #table-content tbody td {
         padding: 4px;
+        font-size: .7rem;
         font-weight: 400;
     }
 
@@ -110,7 +110,7 @@
     }
 
     .gerator label {
-        font-size: .8rem;
+        font-size: 1rem;
         font-weight: 600;
     }
 
@@ -142,17 +142,33 @@
         display: none;
     }
 
+    #form-content {
+        align-items: center;
+
+    }
+
     .list-items input {
         width: 90dvw;
         padding: 1rem 5px;
         box-shadow:none;
     }
+
+    .list-items input::placeholder {
+        font-size: 12px;
+    }
+
+    .list-items label {
+        font-size: 12px;
+    }
+
     .list-items select {
-        width: 50%;
+        width: 30vw;
+        font-size: 12px;
+    }
     }
 
     .part-right {
-        width: 100dvw;
+        width: 90dvw;
         flex-wrap: wrap;
         text-wrap: wrap;
     }
@@ -161,11 +177,48 @@
     }
 
     #table-content th {
-        padding: 5px 1rem;
+        padding: 5px 12px;
         font-size: .6rem;
         font-weight: 500;
     }
 
-    
+    #table-content tbody td {
+        padding: 4px;
+        font-weight: 400;
+    }
 
-  }
+    #total-amount {
+        font-size: 14px;
+    }
+
+    .gerator {
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .gerator label {
+        font-size: .6rem;
+        font-weight: 600;
+    }
+
+    .gerator input {
+        width: 2rem;
+        font-size: 12px;
+        padding: .5rem 0;
+        text-align: center;
+    }
+
+    .gerator button {
+        padding: .5rem;
+        border-radius: 4px;
+        font-size: .6rem;
+        font-weight: 500;
+    }
+
+    #btn-pdf {
+        font-size: .6rem;
+        padding: .6rem;
+    }
+
+
+
