@@ -18,7 +18,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     width: 100%;
-    padding: 0 8rem;
+    padding: 0 6rem;
     height: 100dvh;
 }
 
@@ -197,7 +197,7 @@ header {
             #df8908 10%,
             #ff1d15 100%);
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #f4f4f4;
     transition: box-shadow .5s ease-in-out;
@@ -220,11 +220,16 @@ header {
 }
 
 .table-scroll {
-    max-height: 15vw;
+    max-height: 16vw;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-bottom: 1rem;
-    padding-right: 6px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.table-scroll::-webkit-scrollbar {
+    width: 4px;
+    background-color:  #ea580c;
 }
 
 #table-content {
@@ -235,17 +240,14 @@ header {
 }
 
 #table-content th {
-    max-width: 100%;
+    width: 100%;
+    font-size: 1.1rem;
     background-color: var(--main-color);
-    padding: 10px 1rem;
-    font-size: 1rem;
-    font-weight: 900;
     color: var(--text-color);
     text-align: center;
 }
 
 #table-content tbody td {
-    width: 100%;
     padding: .5rem;
     text-align: center;
     font-size: .8rem;
@@ -254,14 +256,14 @@ header {
 }
 
 .column-name{
-    max-width: 10vw;
+   max-width: 10vw;
    overflow-y: hidden;
    overflow-x: hidden;
    text-overflow: ellipsis;
    white-space: nowrap;
 }
 
-#table-content tbody button {
+#table-content button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,11 +273,13 @@ header {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    transition: color .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    
 }
 
-#table-content tbody button:hover {
+#table-content button:hover {
     color: #ff1d15;
+    transform: scale(1.1);
 }
 
 #summary {
@@ -283,12 +287,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-top: 4rem;
+    margin-top: 3rem;
     flex-wrap: wrap;
 }
 
 #total-amount {
-    color: var(--main-color);
+    background: linear-gradient(270deg,
+            #df8908 10%,
+            #ff1d15 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 1.2rem;

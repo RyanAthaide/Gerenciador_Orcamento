@@ -1,8 +1,9 @@
 @media screen and (max-width: 1280px) {
 
     body {
-        width: 100%;
-        ;
+        padding: 0 2rem;
+        height: 100dvh;
+        
     }
 
     .container {
@@ -68,6 +69,7 @@
     .part-right {
         width: 100%;
         margin-left: 0;
+        margin-top: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -76,7 +78,7 @@
     }
 
     .table-scroll {
-        max-height: 16vw;
+        max-height: 24vw;
         overflow-y: auto;
         overflow-x: hidden;
         margin-bottom: 0;
@@ -84,8 +86,8 @@
     }
 
     #table-content th {
-        font-size: .8rem;
-        font-weight: 600;
+        font-weight: 700;
+        text-wrap: nowrap;
     }
 
     #table-content tbody td {
@@ -96,8 +98,7 @@
 
     #summary {
         justify-content: center;
-        margin-top: 3rem;
-        flex-wrap: wrap;
+        margin-top: 1.5rem;
         text-wrap: nowrap;
     }
 
@@ -110,7 +111,7 @@
     }
 
     .gerator label {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 600;
     }
 
@@ -128,7 +129,7 @@
     }
 
     #btn-pdf {
-        font-size: .8rem;
+        font-size: 1rem;
         padding: .6rem;
     }
 }
@@ -141,6 +142,7 @@
     .sub-title{
         display: none;
     }
+
 
     #form-content {
         align-items: center;
@@ -170,23 +172,21 @@
     .part-right {
         width: 90dvw;
         flex-wrap: wrap;
-        text-wrap: wrap;
     }
     .table-scroll {
-        max-height: 32vw;
+        height: 24vw;
     }
 
     #table-content th {
         padding: 5px 10px;
         font-size: .6rem;
-        font-weight: 500;
+        font-weight: 600;
+        text-wrap: wrap;
     }
 
     #table-content th i{
         font-size: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
     }
 
     #table-content tbody td {
@@ -198,8 +198,14 @@
         font-size: 1rem;
     }
 
+    #summary {
+        justify-content: center;
+        margin-top: 2.5rem;
+        text-wrap: nowrap;
+    }
+
     #total-amount {
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     .gerator {
@@ -208,7 +214,7 @@
     }
 
     .gerator label {
-        font-size: .6rem;
+        font-size: .8rem;
         font-weight: 600;
     }
 
@@ -220,14 +226,14 @@
     }
 
     .gerator button {
-        padding: .5rem;
+        padding: .6rem;
         border-radius: 4px;
         font-size: .6rem;
         font-weight: 500;
     }
 
     #btn-pdf {
-        font-size: .6rem;
+        font-size: .8rem;
         padding: .6rem;
     }
 

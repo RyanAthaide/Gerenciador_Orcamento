@@ -28,7 +28,7 @@ function updateTable() {
             <td>${item.price.toFixed(2)}</td>
             <td>${item.total.toFixed(2)}</td>
             <td>${item.category}</td>
-            <td style="background-color: transparent; display: flex;"><button onclick="removeItem(${index})"> <i class="fa-solid fa-xmark"></i> </button></td>
+            <td style="background-color: transparent; display: flex;"><button onclick="removeItem(${index})" style="font-size: 1.4rem;"> <i class="fa-solid fa-xmark"></i> </button></td>
         `;
 
         tbody.appendChild(row);
