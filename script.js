@@ -57,3 +57,9 @@ function applyDiscount() {
     document.getElementById('total-amount').textContent = `Total: R$ ${total.toFixed(2)}`;
 
 } 
+
+// Adiciona função para o botão "Entre em Contato"
+const btnNav = document.querySelector('.btn-nav').addEventListener('click', () => {
+    window.location.href = 'https://wa.me/5511963101372?text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento?';
+
+})
