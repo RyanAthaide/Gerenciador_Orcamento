@@ -240,11 +240,21 @@ header {
 }
 
 #table-content th {
-    width: 100%;
     font-size: 1.1rem;
     background-color: var(--main-color);
     color: var(--text-color);
     text-align: center;
+}
+
+#table-content th:last-child{
+    background-color: #f4f4f6;
+    border-bottom: 2px solid var(--main-color);
+}
+
+#table-content th i{
+    color: #212121;
+    font-size: 1.1rem;
+
 }
 
 #table-content tbody td {
@@ -255,31 +265,21 @@ header {
     font-weight: 500;
 }
 
-.column-name{
-   max-width: 10vw;
-   overflow-y: hidden;
-   overflow-x: hidden;
-   text-overflow: ellipsis;
-   white-space: nowrap;
-}
-
 #table-content button {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--main-color);
-    font-size: 1.5rem;
+    color: #ff1d15;
     margin: 0 auto;
     border: none;
     background-color: transparent;
     cursor: pointer;
-    transition: transform .3s ease-in-out;
+    transition: opacity .5ms ease-in-out;
     
 }
 
 #table-content button:hover {
-    color: #ff1d15;
-    transform: scale(1.1);
+    opacity: .8;
 }
 
 #summary {
@@ -312,23 +312,23 @@ header {
 }
 
 .gerator label {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
 .gerator input {
     width: 1rem;
-    padding: .6rem;
+    padding: 1.5rem;
     border-radius: 4px;
     background-color: var(--secund-bg-color);
     border: none;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
 .gerator button {
-    padding: .6rem;
+    padding: 1.5rem;
     border-radius: 4px;
     background-color: var(--main-color);
     border: none;
@@ -347,12 +347,40 @@ header {
 #btn-pdf {
     background-color: #212121;
     font-size: 1.2rem;
-    padding: .6rem 1.5rem;
+    padding: 1rem 1.5rem;
     transition: background-color .5s ease-in-out;
 }
 
 #btn-pdf:hover {
     background-color: var(--text-color);
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .8rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: var(--text-color);
+    font-size: .8rem;
+    text-align: center;
+   }
+
+   footer span{
+    background: linear-gradient(to right, #df8908, #ff1d15);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+   }
+
 
 /* end: part2 */
